@@ -22,7 +22,7 @@ public class Greetcontroller {
 	public String hello() {
 		return "hrllo";
 	}
-	@GetMapping("/geetuser/{id}/{name}")
+	@GetMapping("/geetuser/{id}/{name}") 
 	public String geetuser(@PathVariable String name,@PathVariable int id ) {
 		return ""+service.getbyid(id)+" "+name ;
 	}
